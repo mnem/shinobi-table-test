@@ -9,10 +9,17 @@
 /* Begin PBXBuildFile section */
 		BB1E33561BE954010001EF34 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BB1E33551BE954010001EF34 /* main.m */; };
 		BB1E33591BE954010001EF34 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BB1E33581BE954010001EF34 /* AppDelegate.m */; };
-		BB1E335C1BE954010001EF34 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BB1E335B1BE954010001EF34 /* ViewController.m */; };
 		BB1E335F1BE954020001EF34 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BB1E335D1BE954020001EF34 /* Main.storyboard */; };
 		BB1E33611BE954020001EF34 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BB1E33601BE954020001EF34 /* Assets.xcassets */; };
 		BB1E33641BE954020001EF34 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BB1E33621BE954020001EF34 /* LaunchScreen.storyboard */; };
+		BB1E336C1BE958900001EF34 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BB1E336B1BE958900001EF34 /* ViewController.m */; };
+		BB1E336F1BE95D340001EF34 /* GraphTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BB1E336E1BE95D340001EF34 /* GraphTableViewCell.m */; };
+		BB1E33711BE965CF0001EF34 /* ShinobiCharts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB1E33701BE965CF0001EF34 /* ShinobiCharts.framework */; };
+		BB1E33731BE969250001EF34 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB1E33721BE969250001EF34 /* Security.framework */; };
+		BB1E33751BE969330001EF34 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB1E33741BE969330001EF34 /* QuartzCore.framework */; };
+		BB1E33771BE9693F0001EF34 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB1E33761BE9693F0001EF34 /* OpenGLES.framework */; };
+		BB1E33791BE9694A0001EF34 /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB1E33781BE9694A0001EF34 /* CoreText.framework */; };
+		BB1E337B1BE969630001EF34 /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = BB1E337A1BE969630001EF34 /* libc++.tbd */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,11 +28,20 @@
 		BB1E33571BE954010001EF34 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		BB1E33581BE954010001EF34 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		BB1E335A1BE954010001EF34 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		BB1E335B1BE954010001EF34 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		BB1E335E1BE954020001EF34 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		BB1E33601BE954020001EF34 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BB1E33631BE954020001EF34 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BB1E33651BE954020001EF34 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BB1E336B1BE958900001EF34 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		BB1E336D1BE95D340001EF34 /* GraphTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GraphTableViewCell.h; sourceTree = "<group>"; };
+		BB1E336E1BE95D340001EF34 /* GraphTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GraphTableViewCell.m; sourceTree = "<group>"; };
+		BB1E33701BE965CF0001EF34 /* ShinobiCharts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ShinobiCharts.framework; sourceTree = "<group>"; };
+		BB1E33721BE969250001EF34 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		BB1E33741BE969330001EF34 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		BB1E33761BE9693F0001EF34 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
+		BB1E33781BE9694A0001EF34 /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = System/Library/Frameworks/CoreText.framework; sourceTree = SDKROOT; };
+		BB1E337A1BE969630001EF34 /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
+		BB1E337C1BE9736B0001EF34 /* Licence.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Licence.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +49,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BB1E337B1BE969630001EF34 /* libc++.tbd in Frameworks */,
+				BB1E33791BE9694A0001EF34 /* CoreText.framework in Frameworks */,
+				BB1E33771BE9693F0001EF34 /* OpenGLES.framework in Frameworks */,
+				BB1E33751BE969330001EF34 /* QuartzCore.framework in Frameworks */,
+				BB1E33731BE969250001EF34 /* Security.framework in Frameworks */,
+				BB1E33711BE965CF0001EF34 /* ShinobiCharts.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +64,11 @@
 		BB1E33481BE954010001EF34 = {
 			isa = PBXGroup;
 			children = (
+				BB1E337A1BE969630001EF34 /* libc++.tbd */,
+				BB1E33781BE9694A0001EF34 /* CoreText.framework */,
+				BB1E33761BE9693F0001EF34 /* OpenGLES.framework */,
+				BB1E33741BE969330001EF34 /* QuartzCore.framework */,
+				BB1E33721BE969250001EF34 /* Security.framework */,
 				BB1E33531BE954010001EF34 /* Shinobi Table Test */,
 				BB1E33521BE954010001EF34 /* Products */,
 			);
@@ -60,13 +87,17 @@
 			children = (
 				BB1E33571BE954010001EF34 /* AppDelegate.h */,
 				BB1E33581BE954010001EF34 /* AppDelegate.m */,
-				BB1E335A1BE954010001EF34 /* ViewController.h */,
-				BB1E335B1BE954010001EF34 /* ViewController.m */,
-				BB1E335D1BE954020001EF34 /* Main.storyboard */,
 				BB1E33601BE954020001EF34 /* Assets.xcassets */,
-				BB1E33621BE954020001EF34 /* LaunchScreen.storyboard */,
+				BB1E336D1BE95D340001EF34 /* GraphTableViewCell.h */,
+				BB1E336E1BE95D340001EF34 /* GraphTableViewCell.m */,
 				BB1E33651BE954020001EF34 /* Info.plist */,
+				BB1E33621BE954020001EF34 /* LaunchScreen.storyboard */,
+				BB1E337C1BE9736B0001EF34 /* Licence.h */,
+				BB1E335D1BE954020001EF34 /* Main.storyboard */,
+				BB1E33701BE965CF0001EF34 /* ShinobiCharts.framework */,
 				BB1E33541BE954010001EF34 /* Supporting Files */,
+				BB1E335A1BE954010001EF34 /* ViewController.h */,
+				BB1E336B1BE958900001EF34 /* ViewController.m */,
 			);
 			path = "Shinobi Table Test";
 			sourceTree = "<group>";
@@ -149,7 +180,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BB1E335C1BE954010001EF34 /* ViewController.m in Sources */,
+				BB1E336F1BE95D340001EF34 /* GraphTableViewCell.m in Sources */,
+				BB1E336C1BE958900001EF34 /* ViewController.m in Sources */,
 				BB1E33591BE954010001EF34 /* AppDelegate.m in Sources */,
 				BB1E33561BE954010001EF34 /* main.m in Sources */,
 			);
@@ -263,6 +295,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Shinobi",
+					Table,
+					Test,
+				);
 				INFOPLIST_FILE = "Shinobi Table Test/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.noiseandheat.ios.test.experiment.Shinobi-Table-Test";
@@ -274,6 +312,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Shinobi",
+					Table,
+					Test,
+				);
 				INFOPLIST_FILE = "Shinobi Table Test/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.noiseandheat.ios.test.experiment.Shinobi-Table-Test";

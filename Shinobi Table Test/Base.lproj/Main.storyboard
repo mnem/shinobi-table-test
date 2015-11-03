@@ -1,13 +1,15 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9059" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -15,8 +17,64 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="120" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="N4S-pg-Pbh">
+                                <rect key="frame" x="0.0" y="20" width="600" height="580"/>
+                                <animations/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="GraphTableViewCell" id="Bo9-sC-WeB" customClass="GraphTableViewCell">
+                                        <rect key="frame" x="0.0" y="28" width="600" height="120"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Bo9-sC-WeB" id="PIB-vx-dBy">
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="119.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Hzd-ik-0yi" userLabel="Graph" customClass="ShinobiChart">
+                                                    <rect key="frame" x="8" y="22" width="584" height="89"/>
+                                                    <animations/>
+                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                </view>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pQ6-tD-Wo4">
+                                                    <rect key="frame" x="8" y="0.0" width="584" height="20.5"/>
+                                                    <animations/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <animations/>
+                                            <constraints>
+                                                <constraint firstItem="Hzd-ik-0yi" firstAttribute="top" secondItem="pQ6-tD-Wo4" secondAttribute="bottom" constant="2" id="3TS-8A-E9K"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="pQ6-tD-Wo4" secondAttribute="trailing" id="3fu-HO-43A"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="Hzd-ik-0yi" secondAttribute="bottom" id="Jb3-lz-otg"/>
+                                                <constraint firstItem="pQ6-tD-Wo4" firstAttribute="top" secondItem="PIB-vx-dBy" secondAttribute="top" id="RNW-bL-ASB"/>
+                                                <constraint firstItem="Hzd-ik-0yi" firstAttribute="leading" secondItem="PIB-vx-dBy" secondAttribute="leadingMargin" id="b6O-yQ-Bu9"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="Hzd-ik-0yi" secondAttribute="trailing" id="dAM-5B-MkC"/>
+                                                <constraint firstItem="pQ6-tD-Wo4" firstAttribute="leading" secondItem="PIB-vx-dBy" secondAttribute="leadingMargin" id="kMQ-VU-Fqa"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <animations/>
+                                        <connections>
+                                            <outlet property="graph" destination="Hzd-ik-0yi" id="qNM-ce-uw4"/>
+                                            <outlet property="label" destination="pQ6-tD-Wo4" id="hoC-3q-N9U"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="N4S-pg-Pbh" secondAttribute="bottom" id="FLg-Zj-GcL"/>
+                            <constraint firstItem="N4S-pg-Pbh" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="c14-qN-ERo"/>
+                            <constraint firstAttribute="trailing" secondItem="N4S-pg-Pbh" secondAttribute="trailing" id="jB8-Tf-qWu"/>
+                            <constraint firstItem="N4S-pg-Pbh" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="p9h-XB-Nix"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="tableView" destination="N4S-pg-Pbh" id="mgx-9L-6Ec"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
